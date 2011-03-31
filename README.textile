@@ -1,0 +1,18 @@
+h1. md5-service
+
+This micro-service allows you to post a url that points to a file.  The service will then download that file, run it through md5sum and return the checksum.
+
+Example:
+
+This would generate md5 checksum for the content of the "original" datastream in a Fedora object with pid chagneme:20
+
+http://localhost:3000/md5?url=http://localhost:8983/fedora/objects/changeme:20/datastreams/original/content
+
+h2. Known Issues
+
+* assumes UNIX/Linux with md5sum installed
+
+h2. Acknowledgements
+
+Created by "Bill Ingram" https://github.com/waingram
+
